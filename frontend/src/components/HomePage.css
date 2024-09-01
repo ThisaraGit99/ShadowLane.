@@ -1,0 +1,220 @@
+/* General Container */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+}
+
+.hero-text {
+  position: absolute;
+  top: 75%; /* Move text closer to the bottom */
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.shop-now {
+  background-color: #03346e; /* Medium Blue */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.shop-now:hover {
+  background-color: #6eacda; /* Light Blue */
+}
+
+/* Hero Navigation Bars */
+.hero-navigation {
+  position: absolute;
+  bottom: 33.5px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.nav-bar {
+  width: 20px;
+  height: 4px;
+  background-color: #ffffff; /* White */
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-bar.active {
+  background-color: #03346e; /* Medium Blue */
+}
+
+/* About Us Section */
+.about-us {
+  text-align: center;
+  margin: 10px 0;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.about-sections {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 30px;
+}
+
+.about-section {
+  flex: 1 1 22%; /* Adjusts to 4 sections in a row */
+  margin: 20px;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for smooth effect */
+}
+
+.about-section:hover {
+  transform: translateY(-5px); /* Lift the section up on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  cursor: pointer;
+}
+
+.about-section h3 {
+  color: #03346e; /* Medium Blue */
+  margin-bottom: 15px;
+}
+
+.about-section p {
+  color: #343a40; /* Black */
+}
+
+/* Trending Items Section */
+.trending-items {
+  text-align: center;
+  margin: 10px 0;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.trending-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.trending-item {
+  flex: 1 1 30%; /* 3 items in a row */
+  margin: 20px;
+  height: 300px; /* Set the desired height for the boxes */
+  overflow: hidden; /* Ensure content doesn't overflow the box */
+  cursor: pointer;
+  border-radius: 8px; /* Smooth edges for the box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth effect transitions */
+}
+
+.trending-item:hover {
+  transform: translateY(-5px); /* Lift the box slightly on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.trending-item img {
+  width: 100%;
+  height: 100%; /* Ensure image covers the full height of the box */
+  object-fit: cover; /* Maintain aspect ratio while covering the box */
+  border-radius: 8px;
+  transition: transform 0.3s ease; /* Add transition for hover effect */
+}
+
+.trending-item:hover img {
+  transform: scale(1.05); /* Scale image on hover */
+}
+
+/* Trading Collection Section */
+.trading-collection {
+  text-align: center;
+  margin: 50px 0;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  
+}
+
+.trading-grid {
+  display: grid;
+  margin: 30px;
+  grid-template-columns: repeat(4, 1fr); /* 4 items in each row */
+  grid-template-rows: repeat(2, auto); /* 2 rows */
+  gap: 20px;
+  max-height: 500px; /* Set a max height */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.trading-item {
+  background-color: #f8f9fa; /* Light background for items */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth effect transitions */
+  height: 250px; /* Set a fixed height for the items */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+}
+
+.trading-item:hover {
+  transform: translateY(-5px); /* Lift the item slightly on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.trading-item img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  max-height: 100%; /* Ensure the image fits within the item height */
+  border-radius: 8px; /* Smooth edges for the image */
+}
+
+/* Featured Section */
+.featured-section {
+  text-align: center;
+  margin: 20px 0;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.featured-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.featured-item {
+  flex: 1 1 22%; /* Adjusts to 4 items in a row */
+  margin: 10px;
+  cursor: pointer;
+  height: 250px;
+}
+
+.featured-item img {
+  width: 100%;
+  border-radius: 8px; /* Smooth edges for the image */
+  transition: transform 0.3s ease; /* Add transition for hover effect */
+  height: auto;
+  max-height: 100%;
+}
+
+.featured-item:hover img {
+  transform: scale(1.05); /* Scale image on hover */
+  height: auto;
+  max-height: 100%;
+}

@@ -1,0 +1,39 @@
+.footer {
+    background-color: #343a40; /* Dark background */
+  }
+  
+  .footer-title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem; /* Adjusted for consistent spacing */
+  }
+  
+  .footer-link {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-social-link {
+    color: #ffffff;
+    font-size: 1.5rem;
+  }
+  
+  .footer-social-link:hover {
+    color: #6eacda; /* Light Blue on hover */
+  }
+  
+  /* Ensure equal spacing for each section */
+  .row > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* Add spacing between sections */
+  .mb-4 {
+    margin-bottom: 1.5rem; /* Adjust as needed */
+  }
+  

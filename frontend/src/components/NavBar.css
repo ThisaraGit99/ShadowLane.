@@ -1,0 +1,100 @@
+/* src/components/NavBar.css */
+
+.custom-navbar {
+  background-color: #03346e; /* Medium Blue background */
+  position: sticky;
+  top: 0;
+  z-index: 1030; /* Ensure it stays on top of other elements */
+}
+
+.navbar-brand {
+  font-size: 1.5rem; /* Increased font size for the logo */
+}
+
+.logo-letter-red {
+  color: #e74c3c; /* Red color for S and L */
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff; /* White text */
+  text-decoration: none; /* No underline by default */
+  font-size: 1rem;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #6eacda; /* Light Blue on hover */
+}
+
+.custom-search {
+  border-color: #6eacda; /* Light Blue border */
+  border-radius: 50px; /* Fully rounded corners */
+  padding-right: 3rem; /* Space for the search icon */
+  padding-left: 1rem; /* Space for text */
+  position: relative; /* Ensure positioning context for the icon */
+}
+
+.custom-search::placeholder {
+  color: #6eacda; /* Light Blue placeholder */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%288, 43, 82, 1%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.badge {
+  background-color: #e74c3c; /* Red for cart items count */
+}
+
+.bi-person-lines-fill, .bi-cart {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.custom-search-icon {
+  background: none; /* Remove background */
+  color: #6eacda; /* Light Blue color for the icon */
+  border: none;
+  font-size: 1.5rem; /* Adjust icon size */
+  position: absolute; /* Positioning the icon inside the input */
+  right: 1rem; /* Adjust position from the right */
+  top: 50%;
+  transform: translateY(-50%); /* Center vertically */
+}
+
+.input-group {
+  position: relative;
+  width: 100%;
+}
+
+.input-group .form-control {
+  border-radius: 50px; /* Fully rounded corners */
+  border: 1px solid #6eacda; /* Ensure border is visible */
+}
+
+.navbar {
+  padding-left: 5rem; /* Adjusted padding */
+  padding-right: 5rem; /* Adjusted padding */
+}
+
+/* Custom styles for dropdown items */
+.dropdown-menu {
+  background-color: #03346e; /* Medium Blue background for the dropdown */
+  border-radius: 10px; /* Rounded corners for the dropdown */
+}
+
+.dropdown-item {
+  color: #ffffff; /* White text color */
+  border-radius: 5px; /* Rounded corners for dropdown items */
+}
+
+.dropdown-item:hover {
+  background-color: #6eacda; /* Light Blue background on hover */
+  color: #ffffff; /* Ensure text color remains white on hover */
+}
+
+/* Optional: Adjust the dropdown item active state */
+.dropdown-item.active, .dropdown-item:active {
+  background-color: #6eacda; /* Light Blue background when active */
+  color: #ffffff; /* White text color when active */
+}
